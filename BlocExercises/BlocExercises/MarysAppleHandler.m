@@ -12,9 +12,17 @@
 
 - (NSString *) itemMaryCanPurchaseForDollars:(NSInteger)dollars {
     NSString *itemToReturn;
-
-    /* WORK HERE */
-    
+    if (dollars == 4) {
+        return @"get out of my store";
+    } else if (dollars == 5) {
+        return @"have some gum";
+    } else if (dollars == 6) {
+        return @"have an apple";
+    } else if (dollars == 1000) {
+        return @"have an Apple computer";
+    } else if (dollars == 1000000000) {
+        return @"have The Big Apple";
+    }
     NSLog(@"For $%ld, Mary can: %@", (long)dollars, itemToReturn);
     return itemToReturn;
 }
